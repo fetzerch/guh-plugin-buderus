@@ -1,0 +1,84 @@
+{
+    "name": "Buderus Logamatic Web Gateway KM200",
+    "idName": "Buderus",
+    "id": "86beaa11-1a4b-4da1-b7a2-d06c4013d6e1",
+    "vendors": [
+        {
+            "name": "Buderus",
+            "idName": "buderus",
+            "id": "e7502d9b-3c03-4952-baa8-de7a36f1844d",
+            "deviceClasses": [
+                {
+                    "id": "a0765140-0632-44a1-b287-ddce6dd5973e",
+                    "name": "Buderus Logamatic Web Gateway KM200",
+                    "idName": "buderusGateway",
+                    "deviceIcon": "Gateway",
+                    "createMethods": ["user"],
+                    "paramTypes": [
+                        {
+                            "id": "67329407-b827-47d9-aafe-498185138ce1",
+                            "name": "Gateway Host",
+                            "idName": "buderusHost",
+                            "type": "QString",
+                            "inputType": "IPv4Address"
+                        },
+                        {
+                            "id": "35a265f0-4495-4cb5-9c45-bf341e0380da",
+                            "name": "Gateway Port",
+                            "idName": "buderusPort",
+                            "type": "int",
+                            "inputType": "TextLine",
+                            "defaultValue": "80"
+                        },
+                        {
+                            "id": "31ecbc33-2d74-4e66-a1f7-d2c7d5652b4f",
+                            "name": "Gateway Key",
+                            "idName": "buderusKey",
+                            "type": "QString",
+                            "inputType": "TextLine"
+                        },
+                        {
+                            "id": "56c83bc0-c30a-4814-b0f5-57f39c246b77",
+                            "name": "Gateway Id",
+                            "idName": "buderusId",
+                            "type": "QString",
+                            "inputType": "TextLine",
+                            "readOnly": true
+                        },
+                        {
+                            "id": "95b2edc7-d691-43f2-a799-ff4735c637db",
+                            "name": "Gateway Version",
+                            "idName": "buderusVersion",
+                            "type": "QString",
+                            "inputType": "TextLine",
+                            "readOnly": true
+                        }
+                    ],
+                    "stateTypes":[
+                        {
+                            "id": "aa3c44cd-f44b-4fac-ba94-20cfd12581ca",
+                            "idName": "updateTime",
+                            "name": "Last update",
+                            "eventTypeName": "last update changed",
+                            "unit": "UnixTime",
+                            "ruleRelevant": false,
+                            "eventRuleRelevant": false,
+                            "type": "int",
+                            "defaultValue": 0
+                        },
+                        {
+                            "id": "c01eb3a8-b81a-40cf-b533-2fbd230f28bd",
+                            "idName": "temperatureOutdoor",
+                            "name": "Outdoor Temperature",
+                            "eventTypeName": "outdoor temperature changed",
+                            "unit": "DegreeCelsius",
+                            "graphRelevant": true,
+                            "type": "double",
+                            "defaultValue": 0
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

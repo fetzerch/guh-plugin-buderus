@@ -1,0 +1,3 @@
+[submodule "external/Qt-AES"]
+	path = external/Qt-AES
+	url = https://github.com/bricke/Qt-AES.git
