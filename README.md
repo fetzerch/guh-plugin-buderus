@@ -3,6 +3,20 @@
 Plugin for the [guh](https://github.com/guh/guh) IoT platform that
 allows to connect to Buderus heating systems (via Buderus KM200 Web Gateway).
 
+## Command Line Client
+
+The project contains a command line client `scripts/buderus-km200-cli.py`
+that can either query an actual gateway or act as a web server and emulate a
+gateway. This is useful to test the plugin without connecting to real hardware.
+
+Query mode:
+
+    ./buderus-km200-cli.py km200 <KEY> gw.json
+
+Emulation mode:
+
+    ./buderus-km200-cli.py --mode emulate localhost:5000 <KEY> gw.json
+
 ## License
 
 This program is free software; you can redistribute it and/or modify
