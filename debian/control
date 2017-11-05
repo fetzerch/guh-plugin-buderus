@@ -1,0 +1,17 @@
+Source: guh-plugin-buderus
+Section: utils
+Priority: options
+Maintainer: Christian Fetzer <fetzer.ch@gmail.com>
+Build-depends: debhelper (>= 0.0.0),
+               libguh1-dev,
+Standards-Version: 3.9.3
+
+Package: guh-plugin-buderus
+Architecture: any
+Multi-Arch: same
+Section: libs
+Depends: ${shlibs:Depends},
+         ${misc:Depends},
+Description: guh.io plugin for Buderus KM200 Web Gateway
+  Plugin for the guh IoT platform that allows to connect to Buderus heating
+  systems (via Buderus KM200 Web Gateway).
