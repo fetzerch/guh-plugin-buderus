@@ -93,7 +93,7 @@ void DevicePluginBuderus::networkManagerReplyReady(QNetworkReply *reply)
 
         // Update the timestamp only for 1 value per request type.
         if (request.url == temperatureOutdoorUrl || request.url == versionFirmwareUrl) {
-            request.device->setStateValue(updateTimeStateTypeId, QDateTime::currentSecsSinceEpoch());
+            request.device->setStateValue(updateTimeStateTypeId, QDateTime::currentMSecsSinceEpoch() / 1000);
         }
     } else {
         qCWarning(dcBuderus) << "Reply error" << reply->errorString();
